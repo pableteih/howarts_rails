@@ -1,0 +1,33 @@
+<section class="contenedor">
+	<div id="wrapper">
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<h3>Casa Ravenclaw</h3> <br />
+
+				<div class="table-container">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+							<th scope="col">Nombre</th>
+							<th scope="col">Locación</th>
+							<th scope="col">Casa</th>
+							</tr>
+						</thead>
+						<tbody>
+						<% @character.where(house: "Ravenclaw").each do |x| %>
+								<tr>
+								
+								<td><%= x.name %></td>
+								<td><%= x.location %></td>
+								<td><%= x.house %></td>
+								</tr>             
+							<% end %>
+						</tbody>
+					</table>           
+				</div>	
+			</div>
+		</section>
+	</div>
+ 	<%= image_tag "rav1.jpg", width: "600px" %>
+<section>

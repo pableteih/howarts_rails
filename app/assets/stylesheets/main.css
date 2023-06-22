@@ -1,0 +1,21 @@
+.yield{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap:50px;
+
+}
+
+.header{
+    padding: 50px;
+    
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px
+}

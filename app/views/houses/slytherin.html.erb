@@ -1,0 +1,34 @@
+<section class="contenedor">
+	<div id="wrapper">
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<h3>Casa Slytherin</h3> <br />
+
+				<div class="table-container">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+							
+							<th scope="col">Nombre</th>
+							<th scope="col">Locación</th>
+							<th scope="col">Casa</th>
+							</tr>
+						</thead>
+						<tbody>
+						<% @character.where(house: "Slytherin").each do |x| %>
+								<tr>
+								
+								<td><%= x.name %></td>
+								<td><%= x.location %></td>
+								<td><%= x.house %></td>
+								</tr>             
+							<% end %>
+						</tbody>
+					</table>           
+				</div>	
+			</div>
+		</section>
+	</div>
+ 	<%= image_tag "sli1.webp", width: "600px" %>
+<section>
